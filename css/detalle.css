@@ -1,0 +1,111 @@
+/* detalle.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, white, white);
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+#productDetail {
+  background-color:  #ffe6ec;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  max-width: 400px;
+  width: 70%;
+  padding: 25px;
+  text-align: center;
+}
+
+#productDetail h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #fbbf24;
+  text-shadow: 0 0 8px rgba(251,191,36,0.8);
+}
+
+#productDetail img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(251,191,36,0.5);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+#productDetail img:hover {
+  transform: scale(1.05);
+}
+
+#productDetail p {
+  font-size: 1.1rem;
+  margin: 8px 0;
+  color: black;
+}
+#productDetail p strong {
+  color: #fbbf24;
+}
+
+.add-to-cart-btn {
+  background-color: #fbbf24;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #111827;
+  box-shadow: 0 4px 12px rgba(251,191,36,0.7);
+  margin-top: 25px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #f59e0b;
+  transform: scale(1.05);
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 10px 3px rgba(251,191,36,0.7);
+  }
+  50% {
+    box-shadow: 0 0 18px 6px rgba(251,191,36,1);
+  }
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 30px;
+  color: #fbbf24;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #f59e0b;
+  text-decoration: underline;
+}
+
+.icon-cart, .icon-back {
+  margin-right: 8px;
+  font-size: 1.3rem;
+  vertical-align: middle;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.add-to-cart-btn:hover .icon-cart {
+  transform: rotate(15deg) scale(1.2);
+}
+
+.back-link:hover .icon-back {
+  transform: translateX(-5px);
+}
