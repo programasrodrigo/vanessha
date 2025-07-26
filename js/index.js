@@ -10,6 +10,7 @@ function displayProducts(data) {
         <div class="product-details">
           <h3><a href="detalle.html?id=${p.id}">${p.title}</a></h3>
           <p>${p.price}</p>
+          <p><strong>Tallas:</strong> ${p.sizes ? p.sizes.join(', ') : 'No disponibles'}</p>
           <button onclick="addToCart(${p.id})">Agregar al carrito</button>
         </div>
       </div>
