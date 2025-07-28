@@ -21,6 +21,7 @@ function renderCart() {
       <div class="cart-info">
         <h3>${item.title}</h3>
         <p>${item.price}</p>
+        <p><strong>Talla:</strong> ${item.size || "N/A"}</p>
         <div class="quantity-controls">
           <button class="qty-btn" data-action="decrease" data-index="${index}">−</button>
           <span>${item.quantity}</span>
